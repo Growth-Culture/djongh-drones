@@ -1,12 +1,7 @@
-import { Link } from "react-router-dom"
+import { HomeHero } from "./components/HomeHero/HomeHero"
 
-export function HomePage(){
+export function HomePage() {
   return (
-    <>
-      <div className="home"> Home Page</div>
-      
-      <button><Link to="/sobre-nos">Sobre nós</Link> </button> 
-    </>
+   <HomeHero />
   )
-  
 }
