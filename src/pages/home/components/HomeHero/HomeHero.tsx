@@ -10,12 +10,14 @@ import {
   HeroContentWrapper,
 } from './homeHeroStyles'
 
+import HeroVideo from '../../../../assets/background_video.mp4'
+
 export function HomeHero() {
   return (
     <>
       <HeroContainer>
         <BackgroundVideo autoPlay loop muted>
-          <source src="src/assets/background_video.mp4" type="video/mp4" />
+          <source src={HeroVideo} type="video/mp4" />
         </BackgroundVideo>
         <BackgroundOverlay />
         <HeroContent>

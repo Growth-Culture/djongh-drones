@@ -7,6 +7,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --primary-color: #FD7400;
 }
 
 * {
@@ -16,10 +18,6 @@
 html {
 	font-size: 16px;
 	font-size: 62.5%;
-}
-
-img {
-	width: 100%;
 }
 
 a {
