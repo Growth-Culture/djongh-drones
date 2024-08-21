@@ -50,6 +50,7 @@ export const HeroTitle = styled.h2`
   font-size: 10rem;
   color: #fff;
   font-weight: 500;
+  line-height: 12.8rem;
 `
 
 export const HeroSubtitleContainer = styled.div`
