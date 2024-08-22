@@ -1,5 +1,6 @@
 import { Container, MainMenu, MenuContainer, NavLogo, MenuLink } from "./HeaderStyles"
 import logo from '../../assets/imgs/logo-djongh.png'
+import { Button } from "../Button/Button";
 
 export function Header() {
   return(
@@ -12,7 +13,7 @@ export function Header() {
           <MenuLink to="/servicos">Segmentos</MenuLink>
         </MainMenu>
       </MenuContainer>
-      <button>contato</button>
+      <Button title="Contato" to="/contact">Contato</Button>
     </Container>
   )
 }
