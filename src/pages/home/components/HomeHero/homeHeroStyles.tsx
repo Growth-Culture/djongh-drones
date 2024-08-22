@@ -50,14 +50,15 @@ export const HeroTitle = styled.h2`
   font-size: 10rem;
   color: #fff;
   font-weight: 500;
-  line-height: 12.8rem;
+  line-height: 12.8rem; 
 `
 
 export const HeroSubtitleContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-end;
+  gap: 2.8rem;
+  padding-bottom: 3rem;
 `
 
 export const HeroSubtitle = styled.p`
@@ -67,14 +68,4 @@ export const HeroSubtitle = styled.p`
   line-height: 1.9rem;
   font-weight: 300;
   color: #fff;
-`
-
-export const HeroButton = styled.button`
-margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 18px;
-  color: white;
-  background-color: #007bff;
-  border: none;
-  cursor: pointer;
 `
