@@ -2,12 +2,10 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled.div`
-  position: fixed;
-  left: 0;
-  right: 0;
+  position: relative;
   max-width: calc(144rem - 168px);
   margin: 0 auto;
-  top: 4rem;
+  margin-top: 4rem;
   padding: .8rem 3.6rem;
 
   background-color: var(--primary-color);

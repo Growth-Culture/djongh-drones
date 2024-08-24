@@ -4,7 +4,7 @@ import styled from "styled-components"
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
-    position: fixed;
+    /* position: fixed; */
     
     width: 100%;
     bottom: 0;
