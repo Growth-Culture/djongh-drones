@@ -3,10 +3,11 @@ import styled from "styled-components";
 export const HeroContainer = styled.div`
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh + .5rem);
   overflow: hidden;
   display: flex;
   justify-content: center;
+  margin-top: -12rem;
 `
 export const BackgroundVideo = styled.video`
   position: absolute;
