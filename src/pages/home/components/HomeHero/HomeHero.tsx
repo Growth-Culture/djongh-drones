@@ -28,7 +28,7 @@ export function HomeHero() {
                 Sua parceira para serviços de drones no estado de São Paulo e em
                 todo o Brasil.
               </HeroSubtitle>
-              <Button title='segmentos' to="/service" btnIcon>Segmentos</Button>
+              <Button title='segmentos' to="/segmentos" btnIcon>Segmentos</Button>
             </HeroSubtitleContainer>
           </HeroContentWrapper>
         </HeroContent>

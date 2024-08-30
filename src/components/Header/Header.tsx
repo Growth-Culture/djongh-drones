@@ -10,10 +10,10 @@ export function Header() {
         <MainMenu>
           <MenuLink to="/">Início</MenuLink>
           <MenuLink to="/sobre-nos">Sobre nós</MenuLink>
-          <MenuLink to="/servicos">Segmentos</MenuLink>
+          <MenuLink to="/segmentos">Segmentos</MenuLink>
         </MainMenu>
       </MenuContainer>
-      <Button title="Contato" to="/contact">Contato</Button>
+      <Button title="Contato" to="/contatos">Contato</Button>
     </Container>
   )
 }
