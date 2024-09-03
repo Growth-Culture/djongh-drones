@@ -1,3 +1,4 @@
+import { BottomSection } from "./components/BottomSection/BottomSection";
 import { DividerSection } from "./components/DividerSection/DividerSection";
 import { HomeHero } from "./components/HomeHero/HomeHero";
 import { ImgAndTextSection } from "./components/ImgAndTextSection/ImgAndTextSection";
@@ -12,6 +13,7 @@ export function HomePage() {
       <ImgAndTextSection />
       <TextAndImgSection />
       <DividerSection />
+      <BottomSection />
     </>
   );
 }

@@ -5,7 +5,6 @@ width: 100%;
 min-height: 50rem;
 padding: 9.7rem;
 background-color: var(--primary-color);
-margin-bottom: 6rem;
 display: flex;
 
 position: relative;
