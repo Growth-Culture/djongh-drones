@@ -1,3 +1,4 @@
+import { DividerSection } from "./components/DividerSection/DividerSection";
 import { HomeHero } from "./components/HomeHero/HomeHero";
 import { ImgAndTextSection } from "./components/ImgAndTextSection/ImgAndTextSection";
 import { ServiceSection } from "./components/ServiceSection/ServiceSection";
@@ -10,6 +11,7 @@ export function HomePage() {
       <ServiceSection />
       <ImgAndTextSection />
       <TextAndImgSection />
+      <DividerSection />
     </>
   );
 }
