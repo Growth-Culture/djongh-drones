@@ -7,7 +7,7 @@ import {
   TextWrapper,
 } from "./ImgAndTextSectionStyles";
 import Img from "../../../../assets/imgs/img-exemple-2.png";
-import { Counter } from "./Counter";
+import { Counter } from "../../../../components/Counter/Counter";
 
 export function ImgAndTextSection() {
   
