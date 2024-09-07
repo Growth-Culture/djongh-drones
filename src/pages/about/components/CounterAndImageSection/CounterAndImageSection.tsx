@@ -1,21 +1,18 @@
 import { Button } from "../../../../components/Button/Button";
 import {
   Container,
-  Image,
-  ImageWrapper,
+  Video,
+  VideoWrapper,
   InfosWrapper,
   TextWrapper,
 } from "./CounterAndImageStyles";
-import Img from "../../../../assets/imgs/img-exemple-2.png";
+import DroneVideo from "../../../../assets/Drone-Flying-Alpha-Png.webm";
 import { Counter } from "../../../../components/Counter/Counter";
 
 export function CounterAndImageSection() {
   
   return (
     <Container>
-      <ImageWrapper>
-        <Image src={Img} />
-      </ImageWrapper>
       <TextWrapper>
         <h2>
           Services for producing <br />
@@ -35,10 +32,15 @@ export function CounterAndImageSection() {
             <p>projects done</p>
           </div>
         </InfosWrapper>
-        <Button title="sobre-nos" to="/sobre-nos" btnIcon>
-          Sobre nós
+        <Button title="entre-em-contato" to="/contatos" bgOrange btnIcon>
+          Entre em contato
         </Button>
       </TextWrapper>
+      <VideoWrapper>
+        <Video autoPlay loop muted>
+          <source src={DroneVideo} type="video/webm" />
+        </Video>
+      </VideoWrapper>
     </Container>
   );
 }
