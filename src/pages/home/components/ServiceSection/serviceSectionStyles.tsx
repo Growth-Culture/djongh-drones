@@ -42,8 +42,8 @@ transition: 0.2s linear;
 
 export const CardHeader = styled.p`
 font-size: 2.6rem;
-line-height: 2.8rem
-font-weigth: 500;
+line-height: 2.8rem;
+font-weight: 500;
 color: var(--primary-color);
 transition: color 0.2s ease;
 `

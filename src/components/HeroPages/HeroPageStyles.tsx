@@ -17,6 +17,7 @@ export const BackgroundImage = styled.img`
     width: 100%;
     object-fit: cover;
     z-index: -1;
+    height: 100%;
     `
 
 export const HeroContent = styled.div`
