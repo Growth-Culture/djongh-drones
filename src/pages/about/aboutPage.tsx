@@ -2,6 +2,7 @@ import { HeroPages } from "../../components/HeroPages/HeroPages"
 import servicesImage from '../../assets/imgs/hero-page.png'
 import { TextAndVideoSection } from "./components/TextAndVideoSection/TextAndVideoSection"
 import { CounterAndImageSection } from "./components/CounterAndImageSection/CounterAndImageSection"
+import { VideoSection } from "../services/components/VideoSection/VideoSection"
 
 
 export function AboutPage() {
@@ -14,6 +15,7 @@ export function AboutPage() {
     />
     <TextAndVideoSection />
     <CounterAndImageSection />
+    <VideoSection />
     
     </>
 

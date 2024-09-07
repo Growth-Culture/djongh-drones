@@ -4,7 +4,8 @@ export const Container = styled.div`
 width: 100%;
 max-width: 144rem;
 margin: 0 auto;
-padding: 8.5rem;
+padding: 1rem 8.5rem;
+margin-bottom: 8.5rem;
 display: flex;
 overflow: hidden;
 `
