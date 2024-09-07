@@ -5,11 +5,11 @@ import {
   ImageWrapper,
   InfosWrapper,
   TextWrapper,
-} from "./ImgAndTextSectionStyles";
+} from "./CounterAndImageStyles";
 import Img from "../../../../assets/imgs/img-exemple-2.png";
 import { Counter } from "../../../../components/Counter/Counter";
 
-export function ImgAndTextSection() {
+export function CounterAndImageSection() {
   
   return (
     <Container>

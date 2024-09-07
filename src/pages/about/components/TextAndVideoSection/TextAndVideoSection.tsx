@@ -25,7 +25,7 @@ export function TextAndVideoSection() {
           flights. We have the necessary equipment and skills to carry out the
           most advanced projects that are used in internet marketing.
         </SectionDescription>
-        <Button title="segmentos" to="/segmentos" bgOrange btnIcon>Segmentos</Button>
+        <Button title="orçamento" to="/contatos" bgOrange btnIcon>Solicitar orçamento</Button>
       </TextWrapper>
     </Container>
   );
