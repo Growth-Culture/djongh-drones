@@ -19,7 +19,6 @@ export const CardsWrapper = styled.div`
 
 export const Card = styled.div`
     max-width: 26rem;
-    height: 38rem;
     display: flex;
     flex-direction: column;
     align-items: left;
