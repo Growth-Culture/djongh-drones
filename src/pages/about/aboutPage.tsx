@@ -3,6 +3,7 @@ import servicesImage from '../../assets/imgs/hero-page.png'
 import { TextAndVideoSection } from "./components/TextAndVideoSection/TextAndVideoSection"
 import { CounterAndImageSection } from "./components/CounterAndImageSection/CounterAndImageSection"
 import { VideoSection } from "../services/components/VideoSection/VideoSection"
+import { PartnershipSection } from "../contact/components/PartnershipSection/PartnershipSection"
 
 
 export function AboutPage() {
@@ -16,6 +17,7 @@ export function AboutPage() {
     <TextAndVideoSection />
     <CounterAndImageSection />
     <VideoSection />
+    <PartnershipSection />
     
     </>
 
