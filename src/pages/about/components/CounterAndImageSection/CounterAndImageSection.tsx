@@ -1,7 +1,7 @@
 import { Button } from "../../../../components/Button/Button";
 import {
   Container,
-  Video,
+  DroneContent,
   VideoWrapper,
   InfosWrapper,
   TextWrapper,
@@ -37,9 +37,9 @@ export function CounterAndImageSection() {
         </Button>
       </TextWrapper>
       <VideoWrapper>
-        <Video autoPlay loop muted>
+        <DroneContent autoPlay loop muted>
           <source src={DroneVideo} type="video/webm" />
-        </Video>
+        </DroneContent>
       </VideoWrapper>
     </Container>
   );

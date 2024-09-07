@@ -45,7 +45,7 @@ gap: 3.6rem;
 export const VideoWrapper = styled.div`
 width: 64%;
 `
-export const Video = styled.video`
+export const DroneContent = styled.video`
 width: 100%;
 height: 100%;
 transform: scale(1.5);
