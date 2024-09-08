@@ -40,7 +40,7 @@ export function CardSection() {
             </CardsWrapper>
 
             <ButtonWrapper>
-                <Button title='Quero um orçamento' to='/contact' bgOrange btnIcon>Quero um orçamento</Button>
+                <Button title='Quero um orçamento' to='/contatos' bgOrange btnIcon>Quero um orçamento</Button>
             </ButtonWrapper>
 
         </Container>
