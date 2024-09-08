@@ -1,5 +1,5 @@
 import { HeroPages } from "../../components/HeroPages/HeroPages";
-//import { ContactSection } from "./components/ContactSection/ContactSection";
+import { ContactSection } from "./components/ContactSection/ContactSection";
 import { ImgAndTextSection } from "../home/components/ImgAndTextSection/ImgAndTextSection";
 import { PartnershipSection } from "./components/PartnershipSection/PartnershipSection";
 
@@ -13,6 +13,7 @@ export function ContactPage() {
       subtitle="Elevate your content with our high-quality drone footage"
       backgroundImage={contactsImage}
       />
+      <ContactSection />
       <ImgAndTextSection />
       <PartnershipSection />
     </>
