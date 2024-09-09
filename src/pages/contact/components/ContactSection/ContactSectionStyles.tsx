@@ -59,15 +59,16 @@ export const Form = styled.form`
     font-size: 1.6rem;
     gap: 2.4rem;
     
-`
+    
+    `
 export const Label = styled.label`
     padding-bottom: 0.8rem;
-    
-`
+    `
 
 export const Input = styled.input`
     height: 4rem; 
     font-size: 1.6rem;
+    font-family: inherit;
     padding: 0;
     border: none;
     border-bottom: 0.05rem solid #000;
@@ -77,12 +78,15 @@ export const Input = styled.input`
 `
 export const Textarea = styled.textarea`
     height: 8rem;
+    font-family: inherit;
     font-size: 1.6rem;
     padding: 0; 
     border: none; 
     border-bottom: 0.05rem solid #000; 
     outline: none; 
     padding-bottom: 2.4rem;
+
+
 
 
 `
