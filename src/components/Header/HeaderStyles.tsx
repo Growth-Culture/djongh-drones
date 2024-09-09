@@ -148,7 +148,7 @@ export const MenuMobileContainer = styled.div`
     right: 0;
     top: 0;
     width: 50%;
-    height: 80vh;
+    height: 60vh;
     background-color: var(--primary-color);
     margin-right: -30rem;
     transition: all ease .6s;
