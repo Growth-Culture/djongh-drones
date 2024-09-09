@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {
   Container,
   MainMenu,
@@ -20,6 +21,27 @@ import { InstagramIcon } from "../../assets/icons/social-icons/ig-icon";
 import { YoutubeIcon } from "../../assets/icons/social-icons/yt-icon";
 
 export function Header() {
+
+  useEffect(() => {
+    const menuLinks = document.querySelectorAll('.menu-link-mobile');
+    const menuTrigger = document.getElementById('menu-trigger') as HTMLInputElement | null;
+
+    menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (menuTrigger) {
+          menuTrigger.checked = false; // Verifica se menuTrigger não é null
+        }
+      });
+    });
+
+    return () => {
+      // Cleanup - remove event listeners quando o componente desmonta
+      menuLinks.forEach(link => {
+        link.removeEventListener('click', () => {});
+      });
+    };
+  }, []);
+
   return (
     <>
     
@@ -36,7 +58,7 @@ export function Header() {
         Contato
       </Button>
       <MenuMobileWrapper>
-        <Menutrigger type="checkbox" />
+        <Menutrigger type="checkbox" id="menu-trigger"/>
         <HamburguerWrapper>
           <span></span>
           <span></span>
@@ -46,10 +68,10 @@ export function Header() {
         <MenuMobileContainer id="menu-mobile">
 
         <MainMenuMobile>
-          <MenuLinkMobile to="/">Início</MenuLinkMobile>
-          <MenuLinkMobile to="/sobre-nos">Sobre nós</MenuLinkMobile>
-          <MenuLinkMobile to="/segmentos">Segmentos</MenuLinkMobile>
-          <MenuLinkMobile to="/contatos">Contatos</MenuLinkMobile>
+          <MenuLinkMobile className='menu-link-mobile' to="/">Início</MenuLinkMobile>
+          <MenuLinkMobile className='menu-link-mobile' to="/sobre-nos">Sobre nós</MenuLinkMobile>
+          <MenuLinkMobile className='menu-link-mobile' to="/segmentos">Segmentos</MenuLinkMobile>
+          <MenuLinkMobile className='menu-link-mobile' to="/contatos">Contatos</MenuLinkMobile>
         </MainMenuMobile>
         
         <SocialMediaMobile>

@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+const breakPoints = {
+    mobile: "48rem",
+    tablet: "102.4rem",
+  };
+
 export const HeroContainer = styled.div`
     position: relative;
     width: 100%;
@@ -7,7 +12,7 @@ export const HeroContainer = styled.div`
     overflow: hidden;
     display: flex;
     justify-content: center;
-    margin-top: -12rem;    
+    margin-top: -12rem;
     `
 
 export const BackgroundImage = styled.img`
@@ -30,6 +35,10 @@ export const HeroContent = styled.div`
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
+
+    @media (max-width: ${breakPoints.mobile}) {
+        padding: 3rem 2rem;
+    }
     `
 
 export const HeroContentWrapper = styled.div`
@@ -42,7 +51,11 @@ export const HeroContentWrapper = styled.div`
 export const HeroTitle = styled.h2`
     font-size: 7rem;
     color: #fff;
-    font-weight: 500;    
+    font-weight: 500;
+    
+    @media (max-width: ${breakPoints.mobile}) {
+        font-size: 5rem;
+    }
     `
 
 export const HeroSubtitleContainer = styled.div`
@@ -57,5 +70,10 @@ export const HeroSubtitle = styled.p`
     line-height: 1.9rem;
     font-weight: 500;
     color: #fff;
+    
+    
+    @media (max-width: ${breakPoints.mobile}) {
+        margin-right: 2rem;
+    }
 
 `
