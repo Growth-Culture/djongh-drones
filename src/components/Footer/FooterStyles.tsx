@@ -51,14 +51,9 @@ export const SocialMedia = styled.div`
     align-items: center;
     justify-content: flex-end;
     gap: 1.5rem;
-    
-    
     `
 export const Copyright = styled.div`
     display: flex;
-    flex: 2;
     align-items: center;
     justify-content: center;
-    width: 126rem;
-
 `
