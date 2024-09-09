@@ -16,6 +16,8 @@ display: flex;
 justify-content: space-between;   
 gap: 11rem;
 
+overflow: hidden;
+
 @media (max-width: ${breakPoints.mobile}){
   max-width: 48rem;
   flex-direction: column;

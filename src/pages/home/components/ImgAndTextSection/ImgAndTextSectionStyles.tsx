@@ -8,6 +8,7 @@ const breakPoints = {
 export const Container = styled.div`
   width: 100%;
   display: flex;
+  overflow: hidden;
 
   @media (max-width: ${breakPoints.mobile}) {
     flex-direction: column;

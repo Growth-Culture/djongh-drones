@@ -13,6 +13,7 @@ export const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   margin-top: -12rem;
+  overflow: hidden;
 `
 export const BackgroundVideo = styled.video`
   position: absolute;
