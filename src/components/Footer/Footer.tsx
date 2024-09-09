@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Container, FooterLogo, UpperFooter, Copyright, FooterLinks, FooterLink, SocialMedia } from  './FooterStyles'
+import { Container, LogoWrapper, FooterLogo, UpperFooter, Copyright, FooterLinks, FooterLink, SocialMedia } from  './FooterStyles'
 import logoFooter from '../../assets/imgs/logo-djongh-footer.png'
 import { FacebookIcon } from '../../assets/icons/social-icons/fb-icon'
 import { InstagramIcon } from '../../assets/icons/social-icons/ig-icon'
@@ -9,12 +9,14 @@ export function Footer(){
     return (
         <Container>
             <UpperFooter>
-                <FooterLogo src={logoFooter} />
+                <LogoWrapper>
+                    <FooterLogo src={logoFooter} />
+                </LogoWrapper>
                 <FooterLinks>
                     <FooterLink to="/">Início</FooterLink>
                     <FooterLink to="/sobre-nos">Sobre nós</FooterLink>
-                    <FooterLink to="/servicos">Segmentos</FooterLink>
-                    <FooterLink to="/contact">Contatos</FooterLink>
+                    <FooterLink to="/segmentos">Segmentos</FooterLink>
+                    <FooterLink to="/contatos">Contatos</FooterLink>
                 </FooterLinks>
 
                 <SocialMedia>
