@@ -7,12 +7,22 @@ import {
   MenuMobileWrapper,
   Menutrigger,
   HamburguerWrapper,
+  MenuMobileContainer,
+  MainMenuMobile,
+  MenuLinkMobile,
 } from "./HeaderStyles";
 import logo from "../../assets/imgs/logo-djongh.png";
 import { Button } from "../Button/Button";
+import { Link } from "react-router-dom";
+import { FacebookIcon } from "../../assets/icons/social-icons/fb-icon";
+import { InstagramIcon } from "../../assets/icons/social-icons/ig-icon";
+import { YoutubeIcon } from "../../assets/icons/social-icons/yt-icon";
+import { SocialMedia } from "../Footer/FooterStyles";
 
 export function Header() {
   return (
+    <>
+    
     <Container>
       <NavLogo src={logo} />
       <MenuContainer>
@@ -32,7 +42,33 @@ export function Header() {
           <span></span>
           <span></span>
         </HamburguerWrapper>
+
+        <MenuMobileContainer id="menu-mobile">
+
+        <MainMenuMobile>
+          <MenuLinkMobile to="/">Início</MenuLinkMobile>
+          <MenuLinkMobile to="/sobre-nos">Sobre nós</MenuLinkMobile>
+          <MenuLinkMobile to="/segmentos">Segmentos</MenuLinkMobile>
+          <MenuLinkMobile to="/contatos">Contatos</MenuLinkMobile>
+        </MainMenuMobile>
+        
+        <SocialMedia>
+                    <Link to="#">
+                        <InstagramIcon />
+                    </Link>
+
+                    <Link to="#">
+                        <FacebookIcon />
+                    </Link>
+
+                    <Link to="#">
+                        <YoutubeIcon />
+                    </Link>
+                </SocialMedia>
+        </MenuMobileContainer>
       </MenuMobileWrapper>
     </Container>
+   
+    </>
   );
 }
