@@ -190,3 +190,10 @@ export const MenuLinkMobile = styled(Link)`
     }
   }
 `;
+
+export const SocialMediaMobile = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    `

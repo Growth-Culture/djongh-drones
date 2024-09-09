@@ -10,6 +10,7 @@ import {
   MenuMobileContainer,
   MainMenuMobile,
   MenuLinkMobile,
+  SocialMediaMobile,
 } from "./HeaderStyles";
 import logo from "../../assets/imgs/logo-djongh.png";
 import { Button } from "../Button/Button";
@@ -17,7 +18,6 @@ import { Link } from "react-router-dom";
 import { FacebookIcon } from "../../assets/icons/social-icons/fb-icon";
 import { InstagramIcon } from "../../assets/icons/social-icons/ig-icon";
 import { YoutubeIcon } from "../../assets/icons/social-icons/yt-icon";
-import { SocialMedia } from "../Footer/FooterStyles";
 
 export function Header() {
   return (
@@ -52,7 +52,7 @@ export function Header() {
           <MenuLinkMobile to="/contatos">Contatos</MenuLinkMobile>
         </MainMenuMobile>
         
-        <SocialMedia>
+        <SocialMediaMobile>
                     <Link to="#">
                         <InstagramIcon />
                     </Link>
@@ -64,7 +64,7 @@ export function Header() {
                     <Link to="#">
                         <YoutubeIcon />
                     </Link>
-                </SocialMedia>
+                </SocialMediaMobile>
         </MenuMobileContainer>
       </MenuMobileWrapper>
     </Container>
