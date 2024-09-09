@@ -37,7 +37,7 @@ export function CounterAndImageSection() {
         </Button>
       </TextWrapper>
       <VideoWrapper>
-        <DroneContent autoPlay loop muted>
+        <DroneContent autoPlay loop muted playsInline>
           <source src={DroneVideo} type="video/webm" />
         </DroneContent>
       </VideoWrapper>
