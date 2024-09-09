@@ -16,7 +16,7 @@ export function HomeHero() {
   return (
     <>
       <HeroContainer>
-        <BackgroundVideo autoPlay loop muted>
+        <BackgroundVideo autoPlay loop muted playsInline> 
           <source src={HeroVideo} type="video/mp4" />
         </BackgroundVideo>
         <BackgroundOverlay />
