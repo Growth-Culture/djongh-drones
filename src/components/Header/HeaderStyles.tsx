@@ -91,8 +91,6 @@ export const Menutrigger = styled.input`
     &:checked ~ div#menu-mobile {
       display: flex;
       margin-right: 0;
-      visibility: visible;
-
     }
 
     &:checked + div {
@@ -142,8 +140,7 @@ export const HamburguerWrapper = styled.div`
 export const MenuMobileContainer = styled.div`
   display: none;
   @media (max-width: ${breakPoints.mobile}) {
-    display: flex;
-    visibility: hidden;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     position: absolute;
@@ -151,7 +148,7 @@ export const MenuMobileContainer = styled.div`
     right: 0;
     top: 0;
     width: 50%;
-    height: 70vh;
+    height: 80vh;
     background-color: var(--primary-color);
     margin-right: -30rem;
     transition: all ease .6s;
