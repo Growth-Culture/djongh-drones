@@ -13,7 +13,7 @@ export function TextAndVideoSection() {
   return (
     <Container>
       <VideoWrapper>
-        <ServiceVideo autoPlay loop muted controls>
+        <ServiceVideo autoPlay loop muted controls playsInline>
           <source src={Video} type="video/mp4" />
         </ServiceVideo>
       </VideoWrapper>
