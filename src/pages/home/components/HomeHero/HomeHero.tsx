@@ -6,16 +6,18 @@ import {
   HeroTitle,
   HeroSubtitleContainer,
   HeroSubtitle,
-  HeroButton,
   HeroContentWrapper,
 } from './homeHeroStyles'
+
+import HeroVideo from '../../../../assets/background_video.mp4'
+import { Button } from '../../../../components/Button/Button';
 
 export function HomeHero() {
   return (
     <>
       <HeroContainer>
         <BackgroundVideo autoPlay loop muted>
-          <source src="src/assets/background_video.mp4" type="video/mp4" />
+          <source src={HeroVideo} type="video/mp4" />
         </BackgroundVideo>
         <BackgroundOverlay />
         <HeroContent>
@@ -26,7 +28,7 @@ export function HomeHero() {
                 Sua parceira para serviços de drones no estado de São Paulo e em
                 todo o Brasil.
               </HeroSubtitle>
-              <HeroButton>segmentos</HeroButton>
+              <Button title='segmentos' to="/segmentos" btnIcon>Segmentos</Button>
             </HeroSubtitleContainer>
           </HeroContentWrapper>
         </HeroContent>

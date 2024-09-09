@@ -1,12 +1,19 @@
 import styled from "styled-components";
 
+const breakPoints = {
+  mobile: "48rem",
+  tablet: "102.4rem",
+};
+
 export const HeroContainer = styled.div`
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh + .5rem);
   overflow: hidden;
   display: flex;
   justify-content: center;
+  margin-top: -12rem;
+  overflow: hidden;
 `
 export const BackgroundVideo = styled.video`
   position: absolute;
@@ -38,25 +45,44 @@ export const HeroContent = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   height: 100%;
+
+  @media (max-width: ${breakPoints.mobile}) {
+    padding: 2rem;
+  }
+
+ 
 `
 
 export const HeroContentWrapper = styled.div`
   display: flex;
   align-items: flex-end;
   gap: 7rem;
+
+  @media (max-width: ${breakPoints.mobile}) {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
 `
 
 export const HeroTitle = styled.h2`
   font-size: 10rem;
   color: #fff;
   font-weight: 500;
+  line-height: 12.8rem; 
+
+  @media (max-width: ${breakPoints.mobile}) {
+    font-size:  6rem;
+    line-height: 8rem; 
+  }
 `
 
 export const HeroSubtitleContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-end;
+  gap: 2.8rem;
+  padding-bottom: 3rem;
 `
 
 export const HeroSubtitle = styled.p`
@@ -66,14 +92,8 @@ export const HeroSubtitle = styled.p`
   line-height: 1.9rem;
   font-weight: 300;
   color: #fff;
-`
 
-export const HeroButton = styled.button`
-margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 18px;
-  color: white;
-  background-color: #007bff;
-  border: none;
-  cursor: pointer;
+  @media (max-width: ${breakPoints.mobile}) {
+    margin-right: 0;
+  }
 `

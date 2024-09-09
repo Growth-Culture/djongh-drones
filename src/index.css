@@ -1,5 +1,5 @@
 :root {
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -7,6 +7,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --primary-color: #FD7400;
 }
 
 * {
@@ -18,8 +20,8 @@ html {
 	font-size: 62.5%;
 }
 
-img {
-	width: 100%;
+body {
+  overflow-x: hidden;
 }
 
 a {
