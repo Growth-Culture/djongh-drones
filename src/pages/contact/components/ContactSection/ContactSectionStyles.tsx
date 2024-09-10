@@ -1,5 +1,11 @@
 import styled from  'styled-components';
 
+const breakPoints = {
+    mobile: "48rem",
+    tablet: "102.4rem",
+  };
+
+
 export const Container = styled.div`
     width: 100%;
     max-width: 144rem;
@@ -8,6 +14,13 @@ export const Container = styled.div`
     flex-direction: row;
     padding: 8.4rem 9.4rem;
     justify-content: space-between;
+
+    @media (max-width: ${breakPoints.mobile}){
+        max-width: 48rem;
+        flex-direction: column;
+        height: auto;
+        padding: 2rem;   
+}
 
 `
 
@@ -19,6 +32,13 @@ export const ContactInfo = styled.div`
     flex-direction: column;
     justify-content: space-between;
 
+    @media (max-width: ${breakPoints.mobile}){
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        padding: 2rem;
+        gap: 2rem;
+}
 `
 
 export const ContactTitle  = styled.h2`
@@ -26,6 +46,12 @@ export const ContactTitle  = styled.h2`
     line-height: 5rem;
     font-weight: 500;
     padding-right: 15rem;
+
+    @media (max-width: ${breakPoints.mobile}){
+       font-size: 3rem;
+       line-height: 4rem;
+       padding-right: 0;
+}
 
 `
 
@@ -36,6 +62,15 @@ export const ContactPhone = styled.div`
     justify-content: left;
     gap: 4.4rem;
 
+    @media (max-width: ${breakPoints.mobile}){
+       font-size: 1.5rem;
+       line-height: 3.5rem;
+        > svg {
+            height: 2.5rem;
+            width: 2.5rem;
+        }
+}
+
     
 `
 
@@ -45,6 +80,15 @@ export const ContactEmail = styled.div`
     align-items: center;
     justify-content: left;
     gap: 4.4rem;   
+
+    @media (max-width: ${breakPoints.mobile}){
+       font-size: 1.5rem;
+       line-height: 3.5rem;
+        svg {
+            height: 2.5rem;
+            width: 2.5rem;
+        }
+}
     
 `
 
@@ -58,7 +102,11 @@ export const Form = styled.form`
     padding: 0 2.4rem;
     font-size: 1.6rem;
     gap: 2.4rem;
-    
+
+    @media (max-width: ${breakPoints.mobile}){
+      width: 100%;
+      margin-top: 2rem;
+    }
     
     `
 export const Label = styled.label`

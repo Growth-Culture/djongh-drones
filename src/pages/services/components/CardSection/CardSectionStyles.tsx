@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+const breakPoints = {
+    mobile: "48rem",
+    tablet: "102.4rem",
+  };
+
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
@@ -7,6 +12,14 @@ export const Container = styled.div`
     max-width: 144rem;
     height: 63rem;
     margin: 0 auto;
+
+    @media (max-width: ${breakPoints.mobile}){
+        max-width: 48rem;
+        flex-direction: column;
+        height: auto;
+        padding: 2rem;
+    
+}
 `
 
 export const CardsWrapper = styled.div`
@@ -15,6 +28,17 @@ export const CardsWrapper = styled.div`
     justify-content: space-between;
     height: 50rem;
     padding: 6rem 9rem;
+
+    @media (max-width: ${breakPoints.mobile}){
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: auto;
+        justify-items: center;
+        padding: 2rem;
+
+}
 `
 
 export const Card = styled.div`
@@ -25,10 +49,21 @@ export const Card = styled.div`
     padding: 1.7rem 0.8rem;
     gap: 1.2rem;
 
+    @media (max-width: ${breakPoints.mobile}){
+        width: 100%;
+        max-width: 48rem;
+        padding: 2rem;
+    }
+
 `
 
 export const CardImage = styled.img`
     max-width: 24.4rem;
+
+    @media (max-width: ${breakPoints.mobile}){
+        width: 100%;
+}
+    
 `
 export const CardHeader = styled.p`
     font-size: 2.6rem;
@@ -53,10 +88,21 @@ export const CardDescription = styled.p`
     color: #1E1E1E;
     padding-left: 0.8rem;
 
+    @media (max-width: ${breakPoints.mobile}){
+        padding-right: 2rem;
+    }
+
 `
 export const ButtonWrapper = styled.span`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: ${breakPoints.mobile}){
+        display: flex;
+        flex-direction: column;
+
+        
+}
     
 `
