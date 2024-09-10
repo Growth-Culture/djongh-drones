@@ -5,8 +5,11 @@ import {
   VideoWrapper,
   InfosWrapper,
   TextWrapper,
+  ImageMobileWrapper,
+  ImgMobile,
 } from "./CounterAndImageStyles";
 import DroneVideo from "../../../../assets/Drone-Flying-Alpha-Png.webm";
+import DroneImgMobile from "../../../../assets/imgs/drone-exemple.png";
 import { Counter } from "../../../../components/Counter/Counter";
 
 export function CounterAndImageSection() {
@@ -41,6 +44,9 @@ export function CounterAndImageSection() {
           <source src={DroneVideo} type="video/webm" />
         </DroneContent>
       </VideoWrapper>
+      <ImageMobileWrapper>
+        <ImgMobile src={DroneImgMobile} />
+      </ImageMobileWrapper>
     </Container>
   );
 }
