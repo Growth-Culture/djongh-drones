@@ -20,11 +20,11 @@ export function Footer(){
                 </FooterLinks>
 
                 <SocialMedia>
-                    <Link to="#">
+                    <Link to="https://www.instagram.com/dejongh.drones/" target='_blank'>
                         <InstagramIcon />
                     </Link>
 
-                    <Link to="#">
+                    <Link to="">
                         <FacebookIcon />
                     </Link>
 

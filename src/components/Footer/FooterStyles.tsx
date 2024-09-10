@@ -71,6 +71,11 @@ export const SocialMedia = styled.div`
     justify-content: flex-end;
     gap: 1.5rem;
 
+    svg {
+        display: flex;
+        align-items: center;
+    }
+
     @media (max-width: ${breakPoints.mobile}){
         width: 100%;
         gap: 1rem;
