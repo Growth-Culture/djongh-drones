@@ -8,7 +8,6 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   bgOrange?: boolean;
   btnIcon?: boolean; 
   children: React.ReactNode;
-
 }
 
 export function Button(props: ButtonProps) {
