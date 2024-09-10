@@ -138,3 +138,33 @@ export const Textarea = styled.textarea`
 
 
 `
+
+export const SubmitBtn = styled.button`
+display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+
+  height: 3.4rem;
+  border-radius: 2.5rem;
+  background: #fd7400;
+  color: #fff;
+
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+
+  padding: 0.5rem 3.2rem;
+
+  cursor: pointer;
+  border: 1px solid transparent;
+
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+
+  &:hover {
+    background-color: #fff;
+    color: #fd7400;
+    border: 1px solid #fd7400;
+  }
+`
