@@ -8,6 +8,8 @@ import { ServicesPage } from "./pages/services/servicesPage";
 import { ContactPage } from "./pages/contact/contactPage";
 import { Footer } from "./components/Footer/Footer";
 
+import { CookieControler } from './utils/cookieConsent/CookieControler';
+
 function App() {
   return (
     <Router>
@@ -19,6 +21,7 @@ function App() {
       <Route path="/contatos" element={<ContactPage />} />
     </Routes>
     <Footer />
+    <CookieControler />
   </Router>
   )
 }
