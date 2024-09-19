@@ -13,6 +13,7 @@ export function ContactSection() {
         email: '',
         message: '',
     })
+    const [feedbackMessage, setFeedbackMessage] = useState<string | null>(null)
 
     function handleChange(e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
         setFormData({
@@ -23,16 +24,14 @@ export function ContactSection() {
 
     async function handleSubmit(e: FormEvent) {
         e.preventDefault();
-        console.log('Formulário enviado!', formData);
-        
-        // Tente enviar os dados
+
         try {
             const response = await axios.post('http://localhost:3000/send-email', formData);
-            alert('Email enviado com sucesso!');
-            console.log(response);
+            setFeedbackMessage('Email enviado com sucesso!');
+            return response
         } catch (error) {
             console.error('Erro ao enviar o email:', error);
-            alert('Erro ao enviar o email.');
+            setFeedbackMessage('Erro ao enviar o email. Tente novamente mais tarde.');
         }
     }
 
@@ -59,6 +58,7 @@ export function ContactSection() {
                     <Label>Mensagem</Label>
                     <Textarea name="message" placeholder="Deixe uma mensagem para contato" value={formData.message} onChange={handleChange} />
                     <SubmitBtn type="submit">SUBMIT</SubmitBtn>
+                    {feedbackMessage && <p style={{color: feedbackMessage.includes('Erro')? 'red': 'green' }}>{feedbackMessage}</p>}
                 </Form>
 
             </Container>
