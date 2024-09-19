@@ -46,7 +46,9 @@ export function Header() {
     <>
     
     <Container>
+      <Link to="/"> 
       <NavLogo src={logo} />
+      </Link>
       <MenuContainer>
         <MainMenu>
           <MenuLink to="/">Início</MenuLink>
