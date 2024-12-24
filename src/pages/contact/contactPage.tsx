@@ -10,7 +10,7 @@ export function ContactPage() {
     <>
       <HeroPages
       title="Entre em contato"
-      subtitle="Elevate your content with our high-quality drone footage"
+      subtitle=""
       backgroundImage={contactsImage}
       />
       <ContactSection />
