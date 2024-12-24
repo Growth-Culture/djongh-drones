@@ -21,7 +21,7 @@ export function BottomSection() {
         <SectionDescription>
           Soluções visuais e de dados para auxiliar em projetos de engenharia e arquitetura, oferecendo suporte estratégico na tomada de decisões.
         </SectionDescription>
-        <Button title="segmentos" to="/segmentos" bgOrange btnIcon>Nossos serviços</Button>
+        <Button title="servicos" to="/servicos" bgOrange btnIcon>Nossos serviços</Button>
       </TextWrapper>
     </Container>
   );

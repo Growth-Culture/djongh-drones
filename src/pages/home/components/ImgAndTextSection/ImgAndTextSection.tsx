@@ -35,7 +35,7 @@ export function ImgAndTextSection() {
             <p>projetos finalizados</p>
           </div>
         </InfosWrapper>
-        <Button title="sobre-nos" to="/sobre-nos" btnIcon>
+        <Button title="quem-somos" to="/quem-somos" btnIcon>
           Quem somos
         </Button>
       </TextWrapper>

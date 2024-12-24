@@ -14,8 +14,8 @@ export function Footer(){
                 </LogoWrapper>
                 <FooterLinks>
                     <FooterLink to="/">Início</FooterLink>
-                    <FooterLink to="/sobre-nos">Quem Somos</FooterLink>
-                    <FooterLink to="/segmentos">Serviços</FooterLink>
+                    <FooterLink to="/quem-somos">Quem Somos</FooterLink>
+                    <FooterLink to="/servicos">Serviços</FooterLink>
                     <FooterLink to="/contatos">Contatos</FooterLink>
                 </FooterLinks>
 

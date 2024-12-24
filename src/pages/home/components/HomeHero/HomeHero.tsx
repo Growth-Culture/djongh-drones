@@ -32,7 +32,7 @@ export function HomeHero() {
                 de São Paulo e em
                 todo o Brasil.
               </HeroSubtitle>
-              <Button title='segmentos' to="/segmentos" btnIcon>Soluções especializadas</Button>
+              <Button title='servicos' to="/servicos" btnIcon>Soluções especializadas</Button>
             </HeroSubtitleContainer>
           </HeroContentWrapper>
         </HeroContent>

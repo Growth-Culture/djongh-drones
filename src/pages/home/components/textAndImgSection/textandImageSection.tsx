@@ -24,7 +24,7 @@ export function TextAndImgSection() {
           <br />
           Com experiência comprovada e tecnologia avançada, fornecendo resultados confiáveis para nossos clientes.
         </SectionDescription>
-        <Button title="segmentos" to="/segmentos" bgOrange btnIcon>Nossos serviços</Button>
+        <Button title="servicos" to="/servicos" bgOrange btnIcon>Nossos serviços</Button>
       </TextWrapper>
       <ImgWrapper>
         <ServiceImg src={Img} />
