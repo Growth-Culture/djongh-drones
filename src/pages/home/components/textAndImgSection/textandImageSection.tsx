@@ -13,21 +13,18 @@ export function TextAndImgSection() {
   return (
     <Container>
       <TextWrapper>
-        <SectionTag>Photometrics and Topography</SectionTag>
-        <SectionTitle>Professional Pilots</SectionTitle>
+        <SectionTag>Topografia e Levantamento Aéreo</SectionTag>
+        <SectionTitle>Precisão Profissional para mapeamento aéreo</SectionTitle>
         <SectionDescription>
-          We provide professional photo and video creation services during drone
-          flights. We have the necessary equipment and skills to carry out the
-          most advanced projects that are used in internet marketing. We have
-          been operating in the industry for 8 years and during this time we
-          have created many projects for our clients. 
+          Soluções especializadas em topografia e levantamento aéreo com drones
+          de última geração. Nossos serviços garantem dados precisos
+          para mapeamento e análises geoespaciais, ideais para projetosde engenharia, 
+          arquitetura, construção e agricultura.          
           <br />
           <br />
-          We also conduct training
-          and support young people to expand their knowledge in the field of
-          aviation.
+          Com experiência comprovada e tecnologia avançada, fornecendo resultados confiáveis para nossos clientes.
         </SectionDescription>
-        <Button title="segmentos" to="/segmentos" bgOrange btnIcon>Segmentos</Button>
+        <Button title="segmentos" to="/segmentos" bgOrange btnIcon>Nossos serviços</Button>
       </TextWrapper>
       <ImgWrapper>
         <ServiceImg src={Img} />

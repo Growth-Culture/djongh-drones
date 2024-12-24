@@ -15,32 +15,48 @@ export function ServiceSection() {
       <CardsWrapper>
         <Card>
           <CardHeader>01</CardHeader>
-          <CardTitle>Maneuverability</CardTitle>
+          <CardTitle>Levantamento Aéreo</CardTitle>
           <CardDescription>
-            Drones are highly maneuverable and can fly in tight spaces.
+            Captura dados detalhados para mapeamento e monitoramento de áreas
+            extensas, utilizando drones de alta precisão.
           </CardDescription>
         </Card>
         <Card>
           <CardHeader>02</CardHeader>
-          <CardTitle>Maneuverability</CardTitle>
+          <CardTitle>Topografia</CardTitle>
           <CardDescription>
-            Drones are highly maneuverable and can fly in tight spaces.
+            Realize levantamentos topográficos com rapidez e precisão, ideais
+            para projetos de engenharia e construção.
           </CardDescription>
         </Card>
         <Card>
           <CardHeader>03</CardHeader>
-          <CardTitle>Maneuverability</CardTitle>
+          <CardTitle>Inspeção de Infraestruturas</CardTitle>
           <CardDescription>
-            Drones are highly maneuverable and can fly in tight spaces.
+            Inspeção de estruturas de difícil acesso com segurança e eficiência, garantindo a integridade dos ativos críticos.
           </CardDescription>
         </Card>
         <Card>
           <CardHeader>04</CardHeader>
-          <CardTitle>Maneuverability</CardTitle>
+          <CardTitle>Engenharia e Arquitetura</CardTitle>
           <CardDescription>
-            Drones are highly maneuverable and can fly in tight spaces.
+            Soluções visuais e de dados para auxiliar em projetos de engenharia e arquitetura, oferecendo suporte estratégico na tomada de decisões.
           </CardDescription>
-        </Card> 
+        </Card>
+        <Card>
+          <CardHeader>05</CardHeader>
+          <CardTitle>Captação de Imagens e Vídeos Promocionais</CardTitle>
+          <CardDescription>
+            Produza conteúdo visual de alta qualidade para campanhas promocionais, com tomadas aéreas impactantes.
+          </CardDescription>
+        </Card>
+        <Card>
+          <CardHeader>06</CardHeader>
+          <CardTitle>Inspeção Portuária</CardTitle>
+          <CardDescription>
+            Monitora áreas portuárias com precisão, auxiliando na gestão e segurança das operações portuárias.
+          </CardDescription>
+        </Card>
       </CardsWrapper>
       <ImgWrapper>
         <ServiceImg src={Img} />

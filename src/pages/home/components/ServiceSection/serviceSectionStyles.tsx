@@ -73,7 +73,7 @@ transition: color 0.2s ease;
 `
 
 export const CardTitle = styled.h3`
-font-size: 2rem;
+font-size: 1.9rem;
 line-height: 2.4rem;
 font-weight: 500;
 color: #1E1E1E;
@@ -82,7 +82,7 @@ transition: color 0.2s ease;
 
 export const CardDescription = styled.p`
 font-size: 1.6rem;
-line-height: 2rem;
+line-height: 1.9rem;
 color: #1E1E1E;
 transition: color 0.2s ease;
 `

@@ -26,7 +26,7 @@ overflow: hidden;
 `
 
 export const TextWrapper = styled.div`
-width: 50%;
+width: 60%;
 height: auto;
 display: flex;
 flex-direction: column;
@@ -40,7 +40,7 @@ justify-content: flex-end;
 export const TextDivider = styled.p`
 color: #fff;
 font-size: 3.5rem;
-line-height: 5rem;
+line-height: 4rem;
 
 @media (max-width: ${breakPoints.mobile}) {
    font-size: 2.5rem;

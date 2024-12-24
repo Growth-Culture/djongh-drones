@@ -5,8 +5,10 @@ export function DividerSection() {
     <Container>
         <TextWrapper>
           <TextDivider>
-            Trabalhamos rigorosamente dentro da legislação vigente para garantir
-            segurança e qualidade.
+            Compromisso com todas as normas <br /> 
+            de legislação, uso de softwares
+            profissionais licenciados e excelência <br /> 
+            em segurança no campo.
           </TextDivider>
         </TextWrapper>
           <Img src={ImgDivider} alt="" />
