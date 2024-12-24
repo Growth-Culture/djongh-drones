@@ -14,7 +14,6 @@ padding: 6rem 8.4rem;
 
 display: flex;
 justify-content: space-between;   
-gap: 11rem;
 
 overflow: hidden;
 
@@ -27,7 +26,7 @@ overflow: hidden;
 `
 
 export const CardsWrapper = styled.div`
-width: 50%;
+width: 70%;
 display: flex;
 flex-wrap: wrap;
 gap: 3.8rem;
@@ -88,7 +87,7 @@ transition: color 0.2s ease;
 `
 
 export const ImgWrapper = styled.div`
-width: 50%;
+width: 30%;
 @media (max-width: ${breakPoints.mobile}){
   width: 100%;
 }
@@ -96,9 +95,10 @@ width: 50%;
 
 export const ServiceImg = styled.img`
 
-height: 39rem;
+height: 52rem;
 object-fit: cover;
 border-radius: 1.2rem;
+width: 400px;
 
 @media (max-width: ${breakPoints.mobile}){
   width: 100%;

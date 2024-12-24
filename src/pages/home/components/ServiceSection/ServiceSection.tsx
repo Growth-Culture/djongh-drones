@@ -60,7 +60,7 @@ export function ServiceSection() {
       </CardsWrapper>
       <ImgWrapper>
         <ServiceImg src={Img} />
-      </ImgWrapper>
+     </ImgWrapper>
     </Container>
   );
 }
