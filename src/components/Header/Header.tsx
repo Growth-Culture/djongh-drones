@@ -52,8 +52,8 @@ export function Header() {
       <MenuContainer>
         <MainMenu>
           <MenuLink to="/">Início</MenuLink>
-          <MenuLink to="/sobre-nos">Sobre nós</MenuLink>
-          <MenuLink to="/segmentos">Segmentos</MenuLink>
+          <MenuLink to="/sobre-nos">Quem Somos</MenuLink>
+          <MenuLink to="/segmentos">Serviços</MenuLink>
         </MainMenu>
       </MenuContainer>
       <Button title="Contato" to="/contatos">
