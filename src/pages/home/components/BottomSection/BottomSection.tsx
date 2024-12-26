@@ -16,14 +16,12 @@ export function BottomSection() {
         <ServiceImg src={Img} />
       </ImgWrapper>
       <TextWrapper>
-        <SectionTag>Photometrics and Topography</SectionTag>
-        <SectionTitle>Professional Pilots</SectionTitle>
+        <SectionTag>Engenharia e Arquitetura</SectionTag>
+        <SectionTitle>Inspeção de Infraestruturas</SectionTitle>
         <SectionDescription>
-          We provide professional photo and video creation services during drone
-          flights. We have the necessary equipment and skills to carry out the
-          most advanced projects that are used in internet marketing.
+          Soluções visuais e de dados para auxiliar em projetos de engenharia e arquitetura, oferecendo suporte estratégico na tomada de decisões.
         </SectionDescription>
-        <Button title="segmentos" to="/segmentos" bgOrange btnIcon>Segmentos</Button>
+        <Button title="servicos" to="/servicos" bgOrange btnIcon>Nossos serviços</Button>
       </TextWrapper>
     </Container>
   );

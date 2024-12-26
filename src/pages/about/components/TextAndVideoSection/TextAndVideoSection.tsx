@@ -18,14 +18,21 @@ export function TextAndVideoSection() {
         </ServiceVideo>
       </VideoWrapper>
       <TextWrapper>
-        <SectionTag>Photometrics and Topography</SectionTag>
-        <SectionTitle>Professional Pilots</SectionTitle>
+        <SectionTag>Topografia e Levantamento Aéreo</SectionTag>
+        <SectionTitle>
+          Equipe Especializada e em Constante Evolução
+        </SectionTitle>
         <SectionDescription>
-          We provide professional photo and video creation services during drone
-          flights. We have the necessary equipment and skills to carry out the
-          most advanced projects that are used in internet marketing.
+          Para garantir a excelência, nossa equipe investe continuamente em
+          capacitação, com cursos e certificações nas áreas de pilotagem,
+          topografia, filmagem aérea e edição de imagens. Buscamos sempre novas
+          especializações e nos mantemos antenados nas tendências do setor, o
+          que nos permite aprimorar constantemente nossas soluções e nos adaptar
+          às mais recentes tecnologias e demandas.
         </SectionDescription>
-        <Button title="orçamento" to="/contatos" bgOrange btnIcon>Solicitar orçamento</Button>
+        <Button title="orçamento" to="/contatos" bgOrange btnIcon>
+          Solicitar orçamento
+        </Button>
       </TextWrapper>
     </Container>
   );

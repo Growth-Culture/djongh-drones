@@ -10,8 +10,8 @@ export function AboutPage() {
   return (
     <>
     <HeroPages
-    title="Sobre nós"
-    subtitle="Exatidão no diagnóstico e precisão na entrega dos projetos"
+    title="Quem Somos"
+    subtitle="Soluções inovadoras e de alta precisão utilizando a tecnologia de drones"
     backgroundImage={servicesImage}
     />
     <TextAndVideoSection />

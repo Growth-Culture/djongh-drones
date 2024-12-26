@@ -39,7 +39,7 @@ export function ContactSection() {
             <Container>
 
                 <ContactInfo>
-                    <ContactTitle>Services for producing aerial topography and photometrics</ContactTitle>
+                    <ContactTitle>Inove seus projetos com nossas imagens aéreas de alta precisão</ContactTitle>
                     <ContactPhone>
                         <PhoneIcon/>
                             011 999 888 777
@@ -57,7 +57,7 @@ export function ContactSection() {
                     <Input type="email" name="email" placeholder="Email de contato" value={formData.email} onChange={handleChange} />
                     <Label>Mensagem</Label>
                     <Textarea name="message" placeholder="Deixe uma mensagem para contato" value={formData.message} onChange={handleChange} />
-                    <SubmitBtn type="submit">SUBMIT</SubmitBtn>
+                    <SubmitBtn type="submit">ENVIAR</SubmitBtn>
                     {feedbackMessage && <p style={{color: feedbackMessage.includes('Erro')? 'red': 'green' }}>{feedbackMessage}</p>}
                 </Form>
 

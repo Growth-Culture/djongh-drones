@@ -22,13 +22,17 @@ export function HomeHero() {
         <BackgroundOverlay />
         <HeroContent>
           <HeroContentWrapper>
-            <HeroTitle>Serviços com Drones</HeroTitle>
+            <HeroTitle>
+              Excelência <br/> 
+              em Serviços de Drones
+            </HeroTitle>
             <HeroSubtitleContainer>
               <HeroSubtitle>
-                Sua parceira para serviços de drones no estado de São Paulo e em
+                Conectando você a serviços inovadores com drones no estado <br/> 
+                de São Paulo e em
                 todo o Brasil.
               </HeroSubtitle>
-              <Button title='segmentos' to="/segmentos" btnIcon>Segmentos</Button>
+              <Button title='servicos' to="/servicos" btnIcon>Soluções especializadas</Button>
             </HeroSubtitleContainer>
           </HeroContentWrapper>
         </HeroContent>
