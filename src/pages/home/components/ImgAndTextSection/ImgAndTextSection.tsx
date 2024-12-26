@@ -18,25 +18,25 @@ export function ImgAndTextSection() {
       </ImageWrapper>
       <TextWrapper>
         <h2>
-          Services for producing <br />
-          aerial topography and photometrics
+        Soluções com Imagens <br />
+        de Alta Precisão e Qualidade utilizando a tecnologia RTK
         </h2>
         <InfosWrapper>
           <div>
             <span><Counter start={0} end={4}/>k</span>
-            <p>image resolution</p>
+            <p>resolução da imagem</p>
           </div>
           <div>
             <span><Counter start={450} end={500}/>+</span>
-            <p>times of fly </p>
+            <p>horas de vôo</p>
           </div>
           <div>
             <span><Counter start={20} end={50}/>+</span>
-            <p>projects done</p>
+            <p>projetos finalizados</p>
           </div>
         </InfosWrapper>
-        <Button title="sobre-nos" to="/sobre-nos" btnIcon>
-          Sobre nós
+        <Button title="quem-somos" to="/quem-somos" btnIcon>
+          Quem somos
         </Button>
       </TextWrapper>
     </Container>

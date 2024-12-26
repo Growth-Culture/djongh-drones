@@ -18,21 +18,21 @@ export function CounterAndImageSection() {
     <Container>
       <TextWrapper>
         <h2>
-          Services for producing <br />
-          aerial topography and photometrics
+          Imagens de Alta Precisão e<br />
+          Qualidade utilizando a tecnologia RTK
         </h2>
         <InfosWrapper>
           <div>
             <span><Counter start={0} end={4}/>k</span>
-            <p>image resolution</p>
+            <p>resolução da imagem</p>
           </div>
           <div>
             <span><Counter start={450} end={500}/>+</span>
-            <p>times of fly </p>
+            <p>horas de vôo</p>
           </div>
           <div>
             <span><Counter start={20} end={50}/>+</span>
-            <p>projects done</p>
+            <p>projetos finalizados</p>
           </div>
         </InfosWrapper>
         <Button title="entre-em-contato" to="/contatos" bgOrange btnIcon>

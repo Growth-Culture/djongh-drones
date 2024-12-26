@@ -52,8 +52,8 @@ export function Header() {
       <MenuContainer>
         <MainMenu>
           <MenuLink to="/">Início</MenuLink>
-          <MenuLink to="/sobre-nos">Sobre nós</MenuLink>
-          <MenuLink to="/segmentos">Segmentos</MenuLink>
+          <MenuLink to="/quem-somos">Quem Somos</MenuLink>
+          <MenuLink to="/servicos">Serviços</MenuLink>
         </MainMenu>
       </MenuContainer>
       <Button title="Contato" to="/contatos">
@@ -71,8 +71,8 @@ export function Header() {
 
         <MainMenuMobile>
           <MenuLinkMobile className='menu-link-mobile' to="/">Início</MenuLinkMobile>
-          <MenuLinkMobile className='menu-link-mobile' to="/sobre-nos">Sobre nós</MenuLinkMobile>
-          <MenuLinkMobile className='menu-link-mobile' to="/segmentos">Segmentos</MenuLinkMobile>
+          <MenuLinkMobile className='menu-link-mobile' to="/quem-somos">Quem Somos</MenuLinkMobile>
+          <MenuLinkMobile className='menu-link-mobile' to="/servicos">Serviços</MenuLinkMobile>
           <MenuLinkMobile className='menu-link-mobile' to="/contatos">Contatos</MenuLinkMobile>
         </MainMenuMobile>
         
