@@ -9,7 +9,7 @@ export function ServicesPage() {
     <>
     <HeroPages 
     title='Segmentos'
-    subtitle="Elevate your content with our high-quality drone footage"
+    subtitle="Eleve seu conteúdo com nossas filmagens de alta qualidade"
     backgroundImage={servicesImage} />
     <CardSection />
     <VideoSection />

@@ -8,7 +8,7 @@ import { ServicesPage } from "./pages/services/servicesPage";
 import { ContactPage } from "./pages/contact/contactPage";
 import { Footer } from "./components/Footer/Footer";
 
-import { CookieControler } from './utils/cookieConsent/CookieControler';
+import { CookieControler } from './coockies/cookieConsent/CookieControler';
 
 function App() {
   return (

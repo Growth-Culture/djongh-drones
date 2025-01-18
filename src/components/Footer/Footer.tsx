@@ -23,19 +23,19 @@ export function Footer(){
                     <Link to="https://www.instagram.com/dejongh.drones/" target='_blank'>
                         <InstagramIcon />
                     </Link>
-
+{/* 
                     <Link to="">
                         <FacebookIcon />
                     </Link>
 
                     <Link to="#">
                         <YoutubeIcon />
-                    </Link>
+                    </Link> */}
                 </SocialMedia>
             </UpperFooter>
 
             <Copyright>
-                <p>&copy; 2024 DeJongh Drones.</p>
+                <p>&copy; 2025 DeJongh Drones</p>
             </Copyright>
         </Container>
     )
