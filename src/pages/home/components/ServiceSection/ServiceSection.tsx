@@ -8,7 +8,7 @@ import {
   ImgWrapper,
   ServiceImg,
 } from "./serviceSectionStyles";
-import Img from "../../../../assets/imgs/img-exemple-services.jpg";
+import Img from "../../../../assets/imgs/dejongh_pilot_01.jpg";
 export function ServiceSection() {
   return (
     <Container>

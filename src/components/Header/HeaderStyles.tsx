@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const breakPoints = {
   mobile: "48rem",
-  tablet: "102.4rem",
+  tablet: "90rem",
 };
 
 export const Container = styled.div`
@@ -26,6 +26,10 @@ export const Container = styled.div`
     button {
       display: none;
     }
+  }
+
+  @media (max-width: ${breakPoints.tablet}) {
+    max-width: calc(100% - 3rem);
   }
 `;
 
