@@ -1,10 +1,5 @@
 import styled from "styled-components";
 
-const breakPoints = {
-  mobile: "48rem",
-  tablet: "102.4rem",
-};
-
 export const ModalOverlay = styled.div`
   position: fixed;
   top: 0;

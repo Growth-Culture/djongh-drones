@@ -20,10 +20,6 @@ import {
   StyledContent,
 } from "./CardSectionStyles";
 
-
-
-import ImgOne from "../../../../assets/imgs/img-example-4.png";
-
 import { ServicesData } from "../../servicesData";
 import { ServiceModal } from "../ServiceModal/modal";
 import { ChevronDown } from "lucide-react";

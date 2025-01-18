@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const breakPoints = {
   mobile: "48rem",
-  tablet: "90rem",
+  tablet: "80.5rem",
 };
 
 export const Container = styled.div`
