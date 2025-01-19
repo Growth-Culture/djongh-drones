@@ -43,8 +43,8 @@ font-size: 3.5rem;
 line-height: 4rem;
 
 @media (max-width: ${breakPoints.mobile}) {
-   font-size: 2.5rem;
-   line-height: 4rem;
+   font-size: 3rem;
+   line-height: 3.2rem;
   }
 `
 

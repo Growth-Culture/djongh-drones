@@ -72,8 +72,8 @@ export const HeroTitle = styled.h2`
   line-height: 10.8rem; 
 
   @media (max-width: ${breakPoints.mobile}) {
-    font-size:  6rem;
-    line-height: 8rem; 
+    font-size:  5rem;
+    line-height: 5.2rem; 
   }
 `
 
