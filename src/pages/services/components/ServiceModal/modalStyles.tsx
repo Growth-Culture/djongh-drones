@@ -33,8 +33,8 @@ export const ModalContent = styled.div`
 
 export const CloseButton = styled.button`
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: .8rem;
+  right: .8rem;
   background: none;
   border: none;
   font-size: 2.6rem;

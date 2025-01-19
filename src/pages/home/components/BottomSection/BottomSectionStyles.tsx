@@ -21,7 +21,7 @@ overflow: hidden;
   @media (max-width: ${breakPoints.mobile}) {
     flex-direction: column;
     width: 100%;
-    padding: 2rem;
+    padding: 2.4rem;
     align-items: center;
     gap: 2rem;
   }
@@ -50,6 +50,11 @@ font-size: 5rem;
 font-weight: 500;
 margin-top: 1rem;
 margin-bottom: 3rem;
+
+  @media(max-width: ${breakPoints.mobile}){
+    font-size: 4.8rem;
+  }
+
 `
 export const SectionDescription = styled.p`
 font-size: 1.6rem;

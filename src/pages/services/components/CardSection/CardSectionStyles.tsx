@@ -111,7 +111,7 @@ export const ContentWrapper = styled.div`
 display: flex;
 flex-direction: column;
 gap: 3rem;
-padding: 2rem;
+padding: 1rem;
 `
 
 export const ModalTitle = styled.h3`

@@ -41,14 +41,24 @@ export function CardSection() {
   const [active, setActive] = useState<IService | null>(null);
   const [modal, setModal] = useState(false);
 
+  const [openSubcategory, setOpenSubcategory] = useState<number | null>(null)
+
   function handleCardClick(service: IService) {
     setActive(service);
     setModal(true);
+
+    setOpenSubcategory(null)
   }
 
   function closeModal() {
     setModal(false);
     setActive(null);
+
+    setOpenSubcategory(null)
+  }
+
+  function handleCollapsibleChange(index: number, isOpen: boolean){
+    setOpenSubcategory(isOpen ? index : null)
   }
 
   return (
@@ -80,7 +90,10 @@ export function CardSection() {
               <ModalSubcategoryWrapper>
                 {active.subcategorias.map((sub, i) => (
                   <ModalSubcategoryList key={i}>
-                    <StyledCollapsible>
+                    <StyledCollapsible 
+                      open={openSubcategory === i}
+                      onOpenChange={(isOpen) => handleCollapsibleChange(i, isOpen)}
+                    >
                       <StyledTrigger>
                         <ModalSubcategoryTitle>
                           {sub.titulo} 
