@@ -24,14 +24,16 @@ export const Container = styled.div`
 `;
 
 export const CardsWrapper = styled.div`
-  width: 70%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3.8rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  margin-right: 2rem;
 
   @media (max-width: ${breakPoints.mobile}) {
     width: 100%;
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+    margin-right: 0;
   }
 `;
 
