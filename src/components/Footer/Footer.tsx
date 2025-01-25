@@ -6,6 +6,8 @@ import { InstagramIcon } from '../../assets/icons/social-icons/ig-icon'
 
 
 export function Footer(){
+    const currentyYear = new Date().getFullYear()
+
     return (
         <Container>
             <UpperFooter>
@@ -27,7 +29,7 @@ export function Footer(){
             </UpperFooter>
 
             <Copyright>
-                <p>&copy; 2025 DeJongh Drones</p>
+                <p>&copy; {currentyYear} DeJongh Drones</p>
             </Copyright>
         </Container>
     )
