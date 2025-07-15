@@ -1,49 +1,128 @@
-import { Button } from '../../../../components/Button/Button';
-import { Container, CardsWrapper, Card, CardImage, CardHeader, CardTitle, CardDescription, ButtonWrapper } from  './CardSectionStyles';
-import ImgOne from '../../../../assets/imgs/img-example-4.png';
-import ImgTwo from '../../../../assets/imgs/img-example-5.png';
-import ImgThree from '../../../../assets/imgs/img-example-3.png';
-import ImgFour from '../../../../assets/imgs/img-example-6.png';
+import { useState } from "react";
+import { Button } from "../../../../components/Button/Button";
+import {
+  Container,
+  CardsWrapper,
+  Card,
+  CardImage,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  ButtonWrapper,
+  ContentWrapper,
+  ModalTitle,
+  StyledTrigger,
+  ModalSubcategoryWrapper,
+  ModalSubcategoryTitle,
+  ModalSubcategoryDescription,
+  ModalSubcategoryList,
+  StyledCollapsible,
+  StyledContent,
+} from "./CardSectionStyles";
+
+import { ServicesData } from "../../servicesData";
+import { ServiceModal } from "../ServiceModal/modal";
+import { ChevronDown } from "lucide-react";
+
+interface ISubcategory {
+  titulo: string;
+  descricao: string;
+}
+
+interface IService {
+  categoria: string;
+  imageUrl: string;
+  descricao: string;
+  subcategorias: ISubcategory[];
+}
 
 export function CardSection() {
-    return (
-        <>
-        <Container>
-            <CardsWrapper>
-                <Card>
-                    <CardImage src={ImgOne}/>
-                    <CardHeader>01</CardHeader>
-                    <CardTitle>Maneuverability</CardTitle>
-                    <CardDescription>Drones are highly maneuverable and can fly in tight spaces.</CardDescription>
-                </Card>
+  const [services] = useState<IService[]>(ServicesData);
+  const [active, setActive] = useState<IService | null>(null);
+  const [modal, setModal] = useState(false);
 
-                <Card>
-                    <CardImage src={ImgTwo}/>
-                    <CardHeader>02</CardHeader>
-                    <CardTitle>Maneuverability</CardTitle>
-                    <CardDescription>Drones are highly maneuverable and can fly in tight spaces.</CardDescription>
-                </Card>
+  const [openSubcategory, setOpenSubcategory] = useState<number | null>(null)
 
-                <Card>
-                    <CardImage src={ImgThree}/>
-                    <CardHeader>03</CardHeader>
-                    <CardTitle>Maneuverability</CardTitle>
-                    <CardDescription>Drones are highly maneuverable and can fly in tight spaces.</CardDescription>
-                </Card>
+  function handleCardClick(service: IService) {
+    setActive(service);
+    setModal(true);
 
-                <Card>
-                    <CardImage src={ImgFour}/>
-                    <CardHeader>04</CardHeader>
-                    <CardTitle>Maneuverability</CardTitle>
-                    <CardDescription>Drones are highly maneuverable and can fly in tight spaces.</CardDescription>
-                </Card>
-            </CardsWrapper>
+    setOpenSubcategory(null)
+  }
 
-            <ButtonWrapper>
-                <Button title='Quero um orçamento' to='/contatos' bgOrange btnIcon>Quero um orçamento</Button>
-            </ButtonWrapper>
+  function closeModal() {
+    setModal(false);
+    setActive(null);
 
-        </Container>
-        </>
-    )
+    setOpenSubcategory(null)
+  }
+
+  function handleCollapsibleChange(index: number, isOpen: boolean){
+    setOpenSubcategory(isOpen ? index : null)
+  }
+
+  return (
+    <>
+      <Container>
+        <CardsWrapper>
+          {services.map((service, index) => {
+            return (
+              <Card key={index} onClick={() => handleCardClick(service)}>
+                <CardImage src={service.imageUrl} />
+                <CardHeader>{index + 1}</CardHeader>
+                <CardTitle>{service.categoria}</CardTitle>
+                <CardDescription>{service.descricao}</CardDescription>
+              </Card>
+            );
+          })}
+        </CardsWrapper>
+
+        <ButtonWrapper>
+          <Button title="Quero um orçamento" to="/contatos" bgOrange btnIcon>
+            Quero um orçamento
+          </Button>
+        </ButtonWrapper>
+
+        {modal && active && (
+          <ServiceModal onClose={closeModal}>
+            <ModalTitle>{active.categoria}</ModalTitle>
+            <ContentWrapper>
+              <ModalSubcategoryWrapper>
+                {active.subcategorias.map((sub, i) => (
+                  <ModalSubcategoryList key={i}>
+                    <StyledCollapsible 
+                      open={openSubcategory === i}
+                      onOpenChange={(isOpen) => handleCollapsibleChange(i, isOpen)}
+                    >
+                      <StyledTrigger>
+                        <ModalSubcategoryTitle>
+                          {sub.titulo} 
+                        </ModalSubcategoryTitle>
+                          <ChevronDown size={20} />
+                      </StyledTrigger>
+                      <StyledContent>
+                        <ModalSubcategoryDescription>
+                          {sub.descricao}
+                        </ModalSubcategoryDescription>
+                      </StyledContent>
+                    </StyledCollapsible>
+                  </ModalSubcategoryList>
+                ))}
+              </ModalSubcategoryWrapper>
+              <ButtonWrapper>
+                <Button
+                  title="Quero um orçamento"
+                  to="/contatos"
+                  bgOrange
+                  btnIcon
+                >
+                  Quero um orçamento
+                </Button>
+              </ButtonWrapper>
+            </ContentWrapper>
+          </ServiceModal>
+        )}
+      </Container>
+    </>
+  );
 }

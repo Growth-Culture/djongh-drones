@@ -69,11 +69,11 @@ export const HeroTitle = styled.h2`
   font-size: 10rem;
   color: #fff;
   font-weight: 500;
-  line-height: 12.8rem; 
+  line-height: 10.8rem; 
 
   @media (max-width: ${breakPoints.mobile}) {
-    font-size:  6rem;
-    line-height: 8rem; 
+    font-size:  5rem;
+    line-height: 5.2rem; 
   }
 `
 
@@ -86,7 +86,7 @@ export const HeroSubtitleContainer = styled.div`
 `
 
 export const HeroSubtitle = styled.p`
-  margin-right: 19rem;
+  margin-right: 10rem;
   font-size: 1.6rem;
   letter-spacing: .1rem;
   line-height: 1.9rem;
