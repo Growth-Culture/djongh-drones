@@ -1,64 +1,74 @@
 import {
-  Container, ContactInfo, ContactTitle, ContactPhone, ContactEmail,
-  Form, Label, Input, Textarea, SubmitBtn
-} from './ContactSectionStyles'
-import { PhoneIcon } from '../../../../assets/icons/contact-icons/phoneIcon.tsx'
-import { EmailIcon } from '../../../../assets/icons/contact-icons/emailIcon.tsx'
-import { useState, FormEvent, ChangeEvent } from 'react'
-import axios from 'axios'
-import { z } from 'zod'
-import { toast, Toaster} from 'react-hot-toast'
+  Container,
+  ContactInfo,
+  ContactTitle,
+  ContactPhone,
+  ContactEmail,
+  Form,
+  Label,
+  Input,
+  Textarea,
+  SubmitBtn,
+} from "./ContactSectionStyles";
+import { PhoneIcon } from "../../../../assets/icons/contact-icons/phoneIcon.tsx";
+import { EmailIcon } from "../../../../assets/icons/contact-icons/emailIcon.tsx";
+import { useState, FormEvent, ChangeEvent } from "react";
+import axios from "axios";
+import { z } from "zod";
+import { toast, Toaster } from "react-hot-toast";
 
 // Schema de validação
 const contactSchema = z.object({
-  name: z.string().min(3, 'Nome deve ter no mínimo 3 caracteres'),
-  email: z.email('Email inválido'),
-  message: z.string().min(10, 'Mensagem deve ter no mínimo 10 caracteres')
-})
+  name: z.string().min(3, "Nome deve ter no mínimo 3 caracteres"),
+  email: z.email("Email inválido"),
+  message: z.string().min(10, "Mensagem deve ter no mínimo 10 caracteres"),
+});
 
-type ContactFormData = z.infer<typeof contactSchema>
+type ContactFormData = z.infer<typeof contactSchema>;
 
 export function ContactSection() {
   const [formData, setFormData] = useState<ContactFormData>({
-    name: '',
-    email: '',
-    message: '',
-  })
-  const [isLoading, setIsLoading] = useState(false)
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [isLoading, setIsLoading] = useState(false);
 
-  function handleChange(e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
+  function handleChange(
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
-    })
+    });
   }
 
   async function handleSubmit(e: FormEvent) {
-    e.preventDefault()
-    
+    e.preventDefault();
+
     try {
       // Validar dados do formulário
-      const validatedData = contactSchema.parse(formData)
-      setIsLoading(true)
+      const validatedData = contactSchema.parse(formData);
+      setIsLoading(true);
 
-      const response = await axios.post(
-        'https://mail-server-nodejs.onrender.com/send-email',
+      await axios.post(
+        "https://mail-server-nodejs.onrender.com/send-email",
         validatedData
-      )
+      );
 
-      toast.success('Mensagem enviada com sucesso!')
-      setFormData({ name: '', email: '', message: '' })
+      toast.success("Mensagem enviada com sucesso!");
+      setFormData({ name: "", email: "", message: "" });
     } catch (error) {
       if (error instanceof z.ZodError) {
         // Erros de validação
-       toast.error('Preencha todos os campos corretamente')
+        toast.error("Preencha todos os campos corretamente");
       } else {
         // Erro na requisição
-        toast.error('Erro ao enviar mensagem. Tente novamente.')
-        console.error('Erro ao enviar o email:', error)
+        toast.error("Erro ao enviar mensagem. Tente novamente.");
+        console.error("Erro ao enviar o email:", error);
       }
     } finally {
-      setIsLoading(false)
+      setIsLoading(false);
     }
   }
 
@@ -107,10 +117,9 @@ export function ContactSection() {
           disabled={isLoading}
         />
         <SubmitBtn type="submit" disabled={isLoading}>
-          {isLoading ? 'ENVIANDO...' : 'SUBMIT'}
+          {isLoading ? "ENVIANDO..." : "SUBMIT"}
         </SubmitBtn>
       </Form>
     </Container>
-  )
+  );
 }
-
