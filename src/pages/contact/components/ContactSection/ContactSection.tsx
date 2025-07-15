@@ -79,13 +79,13 @@ export function ContactSection() {
         <ContactTitle>
           Services for producing aerial topography and photometrics
         </ContactTitle>
-        <ContactPhone>
+        <ContactPhone href={"https://wa.me/5511973857606"} target="_blank">
           <PhoneIcon />
-          011 999 888 777
+          011 97385-7606
         </ContactPhone>
         <ContactEmail>
           <EmailIcon />
-          contato@djonghdrones.com
+          contato@djdrones.com.br
         </ContactEmail>
       </ContactInfo>
 

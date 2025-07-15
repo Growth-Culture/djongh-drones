@@ -55,16 +55,18 @@ export const ContactTitle  = styled.h2`
 
 `
 
-export const ContactPhone = styled.div`
+export const ContactPhone = styled.a`
     font-size: 2.2rem;
     display: flex;
     align-items: center;
     justify-content: left;
     gap: 4.4rem;
+    cursor: pointer;
 
     @media (max-width: ${breakPoints.mobile}){
        font-size: 1.5rem;
        line-height: 3.5rem;
+       margin-top: 2rem;
         > svg {
             height: 2.5rem;
             width: 2.5rem;
@@ -84,6 +86,7 @@ export const ContactEmail = styled.div`
     @media (max-width: ${breakPoints.mobile}){
        font-size: 1.5rem;
        line-height: 3.5rem;
+       margin-bottom: 2rem;
         svg {
             height: 2.5rem;
             width: 2.5rem;
@@ -106,6 +109,7 @@ export const Form = styled.form`
     @media (max-width: ${breakPoints.mobile}){
       width: 100%;
       margin-top: 2rem;
+      margin-bottom: 2rem;
     }
     
     `
