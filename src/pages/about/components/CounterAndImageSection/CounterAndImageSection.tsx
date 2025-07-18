@@ -45,7 +45,7 @@ export function CounterAndImageSection() {
         </DroneContent>
       </VideoWrapper>
       <ImageMobileWrapper>
-        <ImgMobile src={DroneImgMobile} />
+        <ImgMobile src={DroneImgMobile} alt="Drone"/>
       </ImageMobileWrapper>
     </Container>
   );

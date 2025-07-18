@@ -13,7 +13,7 @@ export function BottomSection() {
   return (
     <Container>
       <ImgWrapper>
-        <ServiceImg src={Img} />
+        <ServiceImg src={Img} alt="Engenharia e Arquitetura"/>
       </ImgWrapper>
       <TextWrapper>
         <SectionTag>Engenharia e Arquitetura</SectionTag>

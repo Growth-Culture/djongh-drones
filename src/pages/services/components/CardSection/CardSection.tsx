@@ -68,7 +68,7 @@ export function CardSection() {
           {services.map((service, index) => {
             return (
               <Card key={index} onClick={() => handleCardClick(service)}>
-                <CardImage src={service.imageUrl} />
+                <CardImage src={service.imageUrl} alt={service.categoria}/>
                 <CardHeader>{index + 1}</CardHeader>
                 <CardTitle>{service.categoria}</CardTitle>
                 <CardDescription>{service.descricao}</CardDescription>

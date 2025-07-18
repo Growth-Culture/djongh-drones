@@ -11,7 +11,7 @@ export function DividerSection() {
             em segurança no campo.
           </TextDivider>
         </TextWrapper>
-          <Img src={ImgDivider} alt="" />
+          <Img src={ImgDivider} alt="Dejongh Drones" />
       </Container>
   )
 }

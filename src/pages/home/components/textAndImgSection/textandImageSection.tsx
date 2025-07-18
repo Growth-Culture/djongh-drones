@@ -27,7 +27,7 @@ export function TextAndImgSection() {
         <Button title="servicos" to="/servicos" bgOrange btnIcon>Nossos serviços</Button>
       </TextWrapper>
       <ImgWrapper>
-        <ServiceImg src={Img} />
+        <ServiceImg src={Img} alt="Topografia e Levantamento Aéreo"/>
       </ImgWrapper>
     </Container>
   );

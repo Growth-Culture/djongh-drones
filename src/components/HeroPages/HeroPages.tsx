@@ -18,7 +18,7 @@ export function HeroPages({title, subtitle, backgroundImage} : HeroPagesProps) {
     return (
         <>
             <HeroContainer>
-                <BackgroundImage src={backgroundImage} />
+                <BackgroundImage src={backgroundImage} alt={title}/>
                 <HeroContent>
                     <HeroContentWrapper>
                         <HeroTitle>{title}</HeroTitle>

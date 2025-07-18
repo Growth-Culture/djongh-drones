@@ -14,7 +14,7 @@ export function ImgAndTextSection() {
   return (
     <Container>
       <ImageWrapper>
-        <Image src={Img} />
+        <Image src={Img} alt="Soluções com Imagens"/>
       </ImageWrapper>
       <TextWrapper>
         <h2>

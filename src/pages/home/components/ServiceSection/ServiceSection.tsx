@@ -59,7 +59,7 @@ export function ServiceSection() {
         </Card>
       </CardsWrapper>
       <ImgWrapper>
-        <ServiceImg src={Img} />
+        <ServiceImg src={Img} alt="Pilotos especializados"/>
      </ImgWrapper>
     </Container>
   );
