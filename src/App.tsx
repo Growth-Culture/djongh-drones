@@ -5,6 +5,7 @@ import { AboutPage } from "./pages/about/aboutPage";
 import { ServicesPage } from "./pages/services/servicesPage";
 import { ContactPage } from "./pages/contact/contactPage";
 import { Footer } from "./components/Footer/Footer";
+import { Analytics } from '@vercel/analytics/react'
 
 import { CookieControler } from './coockies/cookieConsent/CookieControler';
 
@@ -21,6 +22,7 @@ function App() {
     </Routes>
     <Footer />
     <CookieControler />
+    <Analytics />
   </Router>
   )
 }
